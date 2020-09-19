@@ -11,6 +11,10 @@ const adminBro = new AdminBro({
         require('@admin/resources/user'),
         require('@admin/resources/news'),
     ],
+    branding: {
+        companyName: 'Admin Panel',
+        logo: 'https://cdn.promodj.com/afs/61ce52c982be685a7c7e238dfaceb91612:resize:2000x2000:same:7b6579'
+    }
 })
 
 const ADMIN = {
