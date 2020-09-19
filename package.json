@@ -24,12 +24,12 @@
         "nodemon": "^2.0.4"
     },
     "_moduleAliases": {
-        "@services": "./services/",
-        "@controllers": "./controllers/",
-        "@models": "./models/",
-        "@routes": "./routes/",
-        "@admin": "./admin/",
-        "@sequelize": "./sequelize.js"
+        "@services": "./server/services/",
+        "@controllers": "./server/controllers/",
+        "@models": "./server/models/",
+        "@routes": "./server/routes/",
+        "@admin": "./server/admin/",
+        "@sequelize": "./server/sequelize.js"
     },
     "scripts": {
         "dev": "nodemon index"
