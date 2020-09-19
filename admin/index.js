@@ -5,26 +5,12 @@ const sequelize = require('@sequelize')
 
 AdminBro.registerAdapter(AdminBroSequelize)
 
-const User = require('@models/User')
-const News = require('@models/News')
-
 const adminBro = new AdminBro({
     databases: [sequelize],
     resources: [
-        {
-            resource: User
-        },
-        {
-            resource: News,
-            options: {
-                properties: {
-                    text: {
-                        type: 'richtext'
-                    }
-                }
-            }
-        }
-    ]
+        require('@admin/resources/user'),
+        require('@admin/resources/news'),
+    ],
 })
 
 const ADMIN = {

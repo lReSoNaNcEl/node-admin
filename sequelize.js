@@ -6,10 +6,10 @@ const sequelize = new Sequelize(process.env.DB, process.env.DB_USER, process.env
 })
 
 try {
-    setTimeout(async () => {
+    (async () => {
         await sequelize.authenticate()
         console.log('Successfuly connection to database')
-    },  1000)
+    })()
 }
 catch (e) {
     console.log('Connection error')

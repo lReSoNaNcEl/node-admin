@@ -24,8 +24,10 @@
         "nodemon": "^2.0.4"
     },
     "_moduleAliases": {
-        "@controllers": "controllers",
+        "@services": "./services/",
+        "@controllers": "./controllers/",
         "@models": "./models/",
+        "@routes": "./routes/",
         "@admin": "./admin/",
         "@sequelize": "./sequelize.js"
     },
