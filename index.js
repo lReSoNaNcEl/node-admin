@@ -21,6 +21,8 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(cors())
 
+app.use('/images', express.static(path.join(__dirname, 'server', 'static', 'images')))
+
 if (process.env.NODE_ENV === 'production')
     app.use(express.static(path.join(__dirname, 'server', 'public')))
 

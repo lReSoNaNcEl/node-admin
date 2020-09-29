@@ -7,6 +7,12 @@ const News = sequelize.define('News', {
     },
     text: {
         type: DataTypes.TEXT,
+    },
+    preview: {
+        type: DataTypes.TEXT
+    },
+    imgUrl: {
+        type: DataTypes.TEXT
     }
 })
 

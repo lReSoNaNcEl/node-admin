@@ -11,6 +11,9 @@ module.exports = {
             },
             '/admin': {
                 target: 'http://localhost:8081'
+            },
+            '/public': {
+                target: 'http://localhost:8081/public'
             }
         }
     }
