@@ -23,7 +23,7 @@ app.use(cors())
 
 app.use('/images', express.static(path.join(__dirname, 'server', 'static', 'images')))
 
-if (process.env.NODE_ENV === 'production')
+// if (process.env.NODE_ENV === 'production')
     app.use(express.static(path.join(__dirname, 'server', 'public')))
 
 app.listen(port, (req, res) => {console.log(`Server was started on port ${port}`)})
