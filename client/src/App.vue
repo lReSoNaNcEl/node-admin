@@ -31,7 +31,7 @@
   }
 
   .container {
-    width: 62.5rem;
+    width: 67.70833rem;
     margin: 0 auto;
   }
 </style>

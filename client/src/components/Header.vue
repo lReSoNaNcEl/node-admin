@@ -38,7 +38,9 @@
         font-size: 24px;
         margin: 0 1rem 0 0;
         transition: .5s all;
-        &:hover {color: goldenrod;}
+        &:hover {
+            color: goldenrod;
+        }
         &:hover::before {transform: scale(1);}
         &:last-child {margin: 0;}
         &::before {

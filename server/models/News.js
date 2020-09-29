@@ -13,7 +13,7 @@ const News = sequelize.define('News', {
     },
     imgUrl: {
         type: DataTypes.TEXT
-    }
+    },
 })
 
 module.exports = News
