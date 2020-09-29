@@ -1,13 +1,10 @@
 const {Sequelize} = require('sequelize')
+const colors = require('colors/safe')
 
-const sequelize = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, process.env.DB_PASSWORD, {
-    host: process.env.DB_HOST || 'localhost',
-    dialect: process.env.DB_NAME || 'postgres',
-    port: process.env.DB_PORT || '5432'
-})
+const sequelize = new Sequelize(process.env.DATABASE_URL)
 
 new Promise(async resolve => await sequelize.authenticate())
-    .then(() => console.log('Successfully connection to database'))
-    .catch(e => console.log(e))
+    .then(() => console.log(colors.red('Successfully connection to database')))
+    .catch(e => console.log(colors.red(e)))
 
 module.exports = sequelize
